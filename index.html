@@ -14,6 +14,17 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 
+
+		<style>
+/* Versteckt die mobile Tabelle auf größeren Bildschirmen */
+.table-mobile { display: none; }
+
+@media (max-width: 600px) {
+    .table-default { display: none; }
+    .table-mobile { display: table; }
+}
+		</style>
+
 	</head>
 
 
@@ -88,7 +99,7 @@
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>Trainingszeiten</h2>
-							<table>
+							<table class="table-default">
 								<tr>
 								  <td>&nbsp;</td>
 								  <td>Montag</td>
@@ -103,7 +114,7 @@
 								  <td>Art</td>
 								  <td>optional Wettkampf </td>
 								  <td>regulär</td>
-								  <td>nur Frauen</td>
+								  <td>kein Training</td>
 								  <td>regulär</td>
 								  <td>kein Training</td>
 								  <td>kein Training</td>
@@ -113,9 +124,9 @@
 								  <td>Gi / No-Gi</td>
 								  <td>nach Absprache</td>
 								  <td>Gi</td>
-								  <td>Gi</td>
-								  <td>No-Gi</td>
 								  <td>-</td>
+								  <td>No-Gi</td>
+								  <td>-</td>style="display: none;
 								  <td>-</td>
 								  <td>Gi</td>
 								</tr>
@@ -123,15 +134,51 @@
 								  <td>Uhrzeit</td>
 								  <td>17:30</td>
 								  <td>17:30</td>
-								  <td>17:30</td>
+								  <td>-</td>
 								  <td>17:30</td>
 								  <td>-</td>
 								  <td>-</td>
 								  <td>10:00</td>
 								</tr>
 							  </table>
-						</div>
-					</section>
+						
+					
+<!-- Two Tabelle für kleine Bildschirme (z.B. Handys)-->
+    <table class="table-mobile">
+        <tr>
+            <th>Tag</th>
+            <th>Art</th>
+            <th>Gi - NoGi</th>
+            <th>Uhrzeit</th>
+        </tr>
+        <tr>
+            <td>Mo</td>
+            <td>optional</td>
+            <td>nach Absprache</td>
+            <td>17:30</td>
+        </tr>
+        <tr>
+            <td>Di</td>
+            <td>regulär</td>
+            <td>Gi</td>
+            <td>17:30</td>
+        </tr>
+        <!-- Fügen Sie weitere Zeilen entsprechend hinzu -->
+        <tr>
+            <td>Do</td>
+            <td>regulär</td>
+            <td>No-Gi</td>
+            <td>17:30</td>
+        </tr>
+        <tr>
+            <td>So</td>
+            <td>regulär</td>
+            <td>Gi</td>
+            <td>10:00</td>
+        </tr>
+    </table>
+</div>
+</section>
 
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
@@ -142,7 +189,7 @@
 								Natürlich kannst du uns auch über Facebook oder Instagram erreichen. </p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="https://formsubmit.co/bjj-test@own-webmail.de">
+									<form method="post" action="https://formsubmit.co/johannes_eckl@gmx.de">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -171,7 +218,7 @@
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">jakob123@own-webmail.de</a>
+											<a href="#">johannes_eckl@gmx.de</a>
 										</li>
 										<li>
 											<h3>Telefon</h3>

@@ -1,6 +1,4 @@
-Hintergrundbild für Landing Page
-Wochenplan erstellen (table in html machen)
-Website auf github-page hosten
-Logo mit transparenten Hintergrund in die Sidebar oben links
-Feinschliff: weiterleitung bei kontaktformular deaktivieren (stattdessen nur popup), Vorlage in Kontaktformular schreiben, Impressum und Datenschutz schöner machen
-Option zur Sprache auf Englisch stellen einfügen
+2. Logo in die Sidebar oben links
+3. Weiterleitung deaktivieren, lediglich Popup dafür machen
+4. Vorlage in Kontaktformular schreiben
+5. Bilder in webp format
