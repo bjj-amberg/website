@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--
+	Zweisprachig: jeder Text steht einmal in <... lang="de"> und einmal in
+	<... lang="en">. Sichtbar ist immer nur eine Fassung - das regelt das CSS
+	ueber data-lang am <html>-Element, gesetzt von lang.js.
+	Zum Aendern eines Textes also immer BEIDE Fassungen anpassen.
+-->
+<html lang="de" data-lang="de"
+      data-title-de="BJJ Amberg &mdash; Brazilian Jiu Jitsu in Amberg"
+      data-title-en="BJJ Amberg &mdash; Brazilian Jiu Jitsu in Amberg, Germany">
+<head>
+<meta charset="utf-8">
+<title>BJJ Amberg &mdash; Brazilian Jiu Jitsu in Amberg</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BJJ Amberg &ndash; Brazilian Jiu Jitsu Training in Amberg. Trainingszeiten, Trainer und kostenloses Probetraining.">
+<link rel="icon" type="image/png" href="../../images/logo.png">
+<link rel="stylesheet" href="style.css">
+<!-- Blockierend im <head>, damit die Sprache vor dem ersten Bildaufbau steht. -->
+<script src="lang.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+	<div class="wrap">
+		<a class="brand" href="index.html">
+			<img src="../../images/logo.png" alt="">
+			<span>BJJ Amberg</span>
+		</a>
+		<div class="header-right">
+			<nav class="nav">
+				<a href="#ueber-uns"><span lang="de">&Uuml;ber uns</span><span lang="en">About</span></a>
+				<a href="#training"><span lang="de">Training</span><span lang="en">Schedule</span></a>
+				<a href="#kontakt"><span lang="de">Kontakt</span><span lang="en">Contact</span></a>
+			</nav>
+			<div class="lang-switch" role="group" aria-label="Sprache / Language">
+				<button type="button" data-set-lang="de" aria-pressed="true">DE</button>
+				<button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+
+	<section class="hero">
+		<div class="wrap">
+			<p class="eyebrow">
+				<span lang="de">Brazilian Jiu Jitsu &middot; Amberg</span>
+				<span lang="en">Brazilian Jiu Jitsu &middot; Amberg, Germany</span>
+			</p>
+			<h1>
+				<span lang="de">Du willst BJJ lernen?<br>Dann komm zu <em>BJJ Amberg</em>!</span>
+				<span lang="en">Want to learn BJJ?<br>Come train at <em>BJJ Amberg</em>!</span>
+			</h1>
+			<p class="lead">
+				<span lang="de">
+					Gi und No-Gi in einer kleinen Gruppe, seit 2018 in Amberg. Komm zum kostenlosen
+					Probetraining &ndash; Vorerfahrung brauchst du keine, Ausr&uuml;stung erstmal auch nicht.
+				</span>
+				<span lang="en">
+					Gi and No-Gi in a small group, in Amberg since 2018. Come for a free trial session &ndash;
+					no experience needed, and no gear to start with.
+				</span>
+			</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="#kontakt">
+					<span lang="de">Probetraining sichern</span><span lang="en">Book a trial session</span>
+				</a>
+				<a class="btn btn-ghost" href="#training">
+					<span lang="de">Trainingszeiten</span><span lang="en">Schedule</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="stats" style="padding: 0;">
+		<div class="wrap">
+			<div class="stat">
+				<b>2018</b>
+				<span lang="de">Gegr&uuml;ndet</span><span lang="en">Founded</span>
+			</div>
+			<div class="stat">
+				<b>2</b>
+				<span lang="de">Schwarzgurt-Trainer</span><span lang="en">Black belt coaches</span>
+			</div>
+			<div class="stat">
+				<b>3&times;</b>
+				<span lang="de">Training pro Woche</span><span lang="en">Sessions per week</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="ueber-uns">
+		<div class="wrap">
+			<div class="section-head">
+				<p class="eyebrow"><span lang="de">&Uuml;ber uns</span><span lang="en">About us</span></p>
+				<h2><span lang="de">Wer wir sind</span><span lang="en">Who we are</span></h2>
+			</div>
+
+			<div class="about-rows">
+
+				<article class="about-row">
+					<div class="about-media">
+						<img src="../../images/halle.jpg" alt="Die Trainingsfl&auml;che von BJJ Amberg" class="pos-lower">
+					</div>
+					<div class="about-text">
+						<p class="row-kicker"><span lang="de">Seit 2018</span><span lang="en">Since 2018</span></p>
+						<h3><span lang="de">Gr&uuml;ndung</span><span lang="en">How it started</span></h3>
+						<div lang="de">
+							<p>
+								BJJ Amberg wurde 2018 von Johannes Eckl als Sparte von Bushido Amberg gegr&uuml;ndet.
+								Angefangen hat es aber schon davor: Trainiert wurde bereits unter Professor
+								Stuart Lee Pooler in Schwabach und N&uuml;rnberg.
+							</p>
+							<p>
+								Seitdem stehen wir in Amberg auf der Matte &ndash; in der Sporthalle Am Schanzl.
+							</p>
+						</div>
+						<div lang="en">
+							<p>
+								BJJ Amberg was founded in 2018 by Johannes Eckl as a division of Bushido Amberg.
+								It began earlier than that, though: training had already been going on under
+								Professor Stuart Lee Pooler in Schwabach and Nuremberg.
+							</p>
+							<p>
+								Since then we have been on the mats here in Amberg &ndash; at the Am Schanzl sports hall.
+							</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="about-row">
+					<div class="about-media is-portrait">
+						<img src="../../images/Trainer_Bild.jpeg" alt="Johannes Eckl und Daniel Pankey, die Trainer von BJJ Amberg">
+					</div>
+					<div class="about-text">
+						<p class="row-kicker">Johannes Eckl &amp; Daniel Pankey</p>
+						<h3><span lang="de">Trainer &amp; Training</span><span lang="en">Coaches &amp; training</span></h3>
+						<div lang="de">
+							<p>
+								Als Trainer stehen die Schwarzgurte Johannes Eckl und Daniel Pankey zur Verf&uuml;gung.
+								Regul&auml;res Training findet dreimal die Woche statt: Dienstag und Sonntag im Gi,
+								Donnerstag No-Gi.
+							</p>
+							<p>
+								Wer auf einen Wettkampf hinarbeitet, bekommt zus&auml;tzliche Einheiten nach Absprache
+								&ndash; meist freitags oder samstags. Wer einfach nur trainieren will, muss das
+								nicht.
+							</p>
+						</div>
+						<div lang="en">
+							<p>
+								Our coaches are black belts Johannes Eckl and Daniel Pankey. Regular training runs
+								three times a week: Gi on Tuesday and Sunday, No-Gi on Thursday.
+							</p>
+							<p>
+								If you are preparing for a competition, there are extra sessions by arrangement &ndash;
+								usually Friday or Saturday. If you just want to train, you do not have to.
+							</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="about-row">
+					<div class="about-media is-wide">
+						<img src="../../images/verein.jpg" alt="Gruppenbild eines Seminars im Franconia Verbund">
+					</div>
+					<div class="about-text">
+						<p class="row-kicker">BJJ Franconia</p>
+						<h3><span lang="de">Vereinszugeh&ouml;rigkeit</span><span lang="en">Affiliation</span></h3>
+						<div lang="de">
+							<p>
+								BJJ Amberg ist eine Sparte von Bushido Amberg. Dar&uuml;ber hinaus geh&ouml;ren wir zum
+								Franconia Verbund mit Professor Stuart Lee Pooler als Headcoach an der Spitze.
+							</p>
+							<p>
+								Zu BJJ Franconia geh&ouml;ren au&szlig;erdem Learn2Fight (N&uuml;rnberg), Solid BJJ (Coburg),
+								SHIGAISEN (Bayreuth) und Learn2Fight (Bamberg).
+							</p>
+						</div>
+						<div lang="en">
+							<p>
+								BJJ Amberg is a division of Bushido Amberg. Beyond that we are part of the Franconia
+								association, headed by Professor Stuart Lee Pooler.
+							</p>
+							<p>
+								BJJ Franconia also includes Learn2Fight (Nuremberg), Solid BJJ (Coburg),
+								SHIGAISEN (Bayreuth) and Learn2Fight (Bamberg).
+							</p>
+						</div>
+					</div>
+				</article>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="training" class="schedule">
+		<div class="wrap">
+			<div class="section-head">
+				<p class="eyebrow"><span lang="de">Trainingszeiten</span><span lang="en">Schedule</span></p>
+				<h2>
+					<span lang="de">Wann wir auf der Matte stehen</span>
+					<span lang="en">When we are on the mats</span>
+				</h2>
+			</div>
+
+			<div class="table-scroll">
+				<table class="schedule-table">
+					<thead>
+						<tr>
+							<th><span lang="de">Tag</span><span lang="en">Day</span></th>
+							<th><span lang="de">Art</span><span lang="en">Type</span></th>
+							<th>Gi / No-Gi</th>
+							<th><span lang="de">Uhrzeit</span><span lang="en">Time</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="is-off">
+							<td><span lang="de">Montag</span><span lang="en">Monday</span></td>
+							<td data-label-de="Art" data-label-en="Type"><span lang="de">kein Training</span><span lang="en">no training</span></td>
+							<td data-label-de="Gi / No-Gi" data-label-en="Gi / No-Gi">&ndash;</td><td data-label-de="Uhrzeit" data-label-en="Time">&ndash;</td>
+						</tr>
+						<tr class="is-main">
+							<td><span lang="de">Dienstag</span><span lang="en">Tuesday</span></td>
+							<td data-label-de="Art" data-label-en="Type"><span class="tag tag-regular"><span lang="de">regul&auml;r</span><span lang="en">regular</span></span></td>
+							<td data-label-de="Gi / No-Gi" data-label-en="Gi / No-Gi">Gi</td><td data-label-de="Uhrzeit" data-label-en="Time">17:30</td>
+						</tr>
+						<tr class="is-off">
+							<td><span lang="de">Mittwoch</span><span lang="en">Wednesday</span></td>
+							<td data-label-de="Art" data-label-en="Type"><span lang="de">kein Training</span><span lang="en">no training</span></td>
+							<td data-label-de="Gi / No-Gi" data-label-en="Gi / No-Gi">&ndash;</td><td data-label-de="Uhrzeit" data-label-en="Time">&ndash;</td>
+						</tr>
+						<tr class="is-main">
+							<td><span lang="de">Donnerstag</span><span lang="en">Thursday</span></td>
+							<td data-label-de="Art" data-label-en="Type"><span class="tag tag-regular"><span lang="de">regul&auml;r</span><span lang="en">regular</span></span></td>
+							<td data-label-de="Gi / No-Gi" data-label-en="Gi / No-Gi">No-Gi</td><td data-label-de="Uhrzeit" data-label-en="Time">17:30</td>
+						</tr>
+						<tr>
+							<td><span lang="de">Freitag</span><span lang="en">Friday</span></td>
+							<td data-label-de="Art" data-label-en="Type"><span class="tag tag-optional"><span lang="de">nach Absprache</span><span lang="en">by arrangement</span></span></td>
+							<td data-label-de="Gi / No-Gi" data-label-en="Gi / No-Gi">Gi / No-Gi</td>
+							<td data-label-de="Uhrzeit" data-label-en="Time"><span lang="de">nach Absprache</span><span lang="en">by arrangement</span></td>
+						</tr>
+						<tr>
+							<td><span lang="de">Samstag</span><span lang="en">Saturday</span></td>
+							<td data-label-de="Art" data-label-en="Type"><span class="tag tag-optional"><span lang="de">nach Absprache</span><span lang="en">by arrangement</span></span></td>
+							<td data-label-de="Gi / No-Gi" data-label-en="Gi / No-Gi">Gi / No-Gi</td>
+							<td data-label-de="Uhrzeit" data-label-en="Time"><span lang="de">nach Absprache</span><span lang="en">by arrangement</span></td>
+						</tr>
+						<tr class="is-main">
+							<td><span lang="de">Sonntag</span><span lang="en">Sunday</span></td>
+							<td data-label-de="Art" data-label-en="Type"><span class="tag tag-regular"><span lang="de">regul&auml;r</span><span lang="en">regular</span></span></td>
+							<td data-label-de="Gi / No-Gi" data-label-en="Gi / No-Gi">Gi</td><td data-label-de="Uhrzeit" data-label-en="Time">10:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="note">
+				<span lang="de">
+					Einheiten &bdquo;nach Absprache&ldquo; dienen vor allem der Wettkampfvorbereitung und werden
+					kurzfristig abgestimmt.
+				</span>
+				<span lang="en">
+					Sessions marked &bdquo;by arrangement&ldquo; are mainly for competition preparation and are
+					arranged at short notice.
+				</span>
+			</p>
+		</div>
+	</section>
+
+	<section id="galerie">
+		<div class="wrap">
+			<div class="section-head">
+				<p class="eyebrow"><span lang="de">Einblicke</span><span lang="en">Impressions</span></p>
+				<h2><span lang="de">Aus dem Training</span><span lang="en">From training</span></h2>
+			</div>
+			<div class="gallery-grid">
+				<!-- GALERIE:START -->
+				<img src="../../images/galerie/IMG-20240609-WA0015.jpg" alt="Eindruck vom Training bei BJJ Amberg" loading="lazy">
+				<img src="../../images/galerie/IMG-20240911-WA0031.jpg" alt="Eindruck vom Training bei BJJ Amberg" loading="lazy">
+				<img src="../../images/galerie/IMG-20241117-WA0001.jpg" alt="Eindruck vom Training bei BJJ Amberg" loading="lazy">
+				<img src="../../images/galerie/IMG-20241202-WA0005.jpg" alt="Eindruck vom Training bei BJJ Amberg" loading="lazy">
+				<img src="../../images/galerie/IMG-20241208-WA0000.jpg" alt="Eindruck vom Training bei BJJ Amberg" loading="lazy">
+				<!-- GALERIE:ENDE -->
+			</div>
+		</div>
+	</section>
+
+	<section id="kontakt" class="schedule">
+		<div class="wrap">
+			<div class="section-head">
+				<p class="eyebrow"><span lang="de">Kontakt</span><span lang="en">Contact</span></p>
+				<h2><span lang="de">Komm vorbei</span><span lang="en">Come by</span></h2>
+				<p>
+					<span lang="de">
+						Egal, ob du bereits Kampfsport-Erfahrung hast oder nicht &ndash; bei uns ist jeder
+						willkommen. Schreib uns f&uuml;r ein kostenloses Probetraining.
+					</span>
+					<span lang="en">
+						Whether you already have martial arts experience or none at all &ndash; everyone is
+						welcome. Write to us to arrange a free trial session.
+					</span>
+				</p>
+			</div>
+
+			<div class="contact-grid">
+				<div>
+					<!--
+					   FormSubmit-Endpoint.
+
+					   Der Zufallsstring unten steht stellvertretend fuer die
+					   Zieladresse - dadurch taucht sie nirgends im Quelltext auf
+					   und kann nicht von Spam-Harvestern ausgelesen werden.
+					   Zugestellt wird an Johannes' Adresse.
+
+					   Neuen String braucht man nur, wenn die Zieladresse wechselt:
+					   action voruebergehend auf die echte Adresse setzen, Formular
+					   ueber einen Webserver absenden (perl redesign/serve.pl -
+					   file:// lehnt FormSubmit ab), dann kommt der neue String per
+					   Mail.
+					-->
+					<form method="post" action="https://formsubmit.co/181232ec005c3103e22b9ccb59b6aa1a">
+
+						<!-- Spamschutz: unsichtbar fuer Menschen, Bots fuellen es aus. -->
+						<div class="hp-field" aria-hidden="true">
+							<label for="_honey">Dieses Feld bitte leer lassen</label>
+							<input type="text" name="_honey" id="_honey" tabindex="-1" autocomplete="off">
+						</div>
+						<input type="hidden" name="_captcha" value="true">
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_subject" value="Neue Anfrage ueber bjj-amberg.de">
+
+						<div class="field">
+							<label for="name"><span lang="de">Name</span><span lang="en">Name</span></label>
+							<input type="text" name="name" id="name" required>
+						</div>
+						<div class="field">
+							<label for="email"><span lang="de">E-Mail</span><span lang="en">Email</span></label>
+							<input type="email" name="email" id="email" required>
+						</div>
+						<div class="field">
+							<label for="message"><span lang="de">Nachricht</span><span lang="en">Message</span></label>
+							<textarea name="message" id="message" rows="6" required></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-primary">
+							<span lang="de">Absenden</span><span lang="en">Send</span>
+						</button>
+
+						<p class="form-note">
+							<span lang="de">
+								Mit dem Absenden stimmst du der Verarbeitung deiner Angaben zur Beantwortung der
+								Anfrage zu. Details &ndash; auch zum eingesetzten Versanddienst &ndash; stehen in der
+								<a href="datenschutz.html">Datenschutzerkl&auml;rung</a>.
+							</span>
+							<span lang="en">
+								By sending this form you consent to your details being processed in order to answer
+								your enquiry. Details &ndash; including the delivery service used &ndash; are in the
+								<a href="datenschutz.html">privacy policy</a>.
+							</span>
+						</p>
+					</form>
+
+					<p class="bring-note">
+						<strong lang="de">F&uuml;r dein Probetraining</strong>
+						<strong lang="en">For your trial session</strong>
+						<span lang="de">Zieh Sportsachen an und bring etwas zu trinken und ein Handtuch mit.</span>
+						<span lang="en">Wear sports clothes, and bring something to drink and a towel.</span>
+					</p>
+				</div>
+
+				<div>
+					<div class="info-block">
+						<h3><span lang="de">Adresse</span><span lang="en">Address</span></h3>
+						<p>Am Schanzl 11<br>92224 Amberg<span lang="en">, Germany</span></p>
+					</div>
+					<div class="info-block">
+						<h3><span lang="de">E-Mail</span><span lang="en">Email</span></h3>
+						<!-- Adresse wird erst im Browser zusammengesetzt (Spamschutz). -->
+						<p><span data-mail="johannes_eckl|gmx.de"></span></p>
+					</div>
+					<div class="info-block">
+						<h3><span lang="de">Telefon</span><span lang="en">Phone</span></h3>
+						<p><a href="tel:+4917657723714">+49 176 57723714</a></p>
+					</div>
+					<div class="info-block">
+						<h3>Social</h3>
+						<div class="social">
+							<a href="https://www.facebook.com/profile.php?id=100057458109042" target="_blank" rel="noopener">Facebook</a>
+							<a href="https://www.instagram.com/bjj_amberg" target="_blank" rel="noopener">Instagram</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<footer class="site-footer">
+	<div class="wrap">
+		<span>&copy; BJJ Amberg</span>
+		<nav class="footer-links">
+			<a href="impressum.html"><span lang="de">Impressum</span><span lang="en">Legal notice</span></a>
+			<a href="datenschutz.html"><span lang="de">Datenschutz</span><span lang="en">Privacy</span></a>
+		</nav>
+	</div>
+</footer>
+
+<script src="contact.js"></script>
+</body>
+</html>

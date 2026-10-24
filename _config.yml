@@ -1,0 +1,6 @@
+# Dateien, die nicht auf bjj-amberg.de ausgeliefert werden sollen.
+# (Ohne diesen Eintrag waere z.B. bjj-amberg.de/todo.txt oeffentlich abrufbar.)
+exclude:
+  - todo.txt
+  - README.md
+  - redesign

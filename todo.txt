@@ -1,4 +1,29 @@
-2. Logo in die Sidebar oben links
-3. Weiterleitung deaktivieren, lediglich Popup dafür machen
-4. Vorlage in Kontaktformular schreiben
-5. Bilder in webp format
+OFFEN
+-----
+
+1. Catch-all bei own-webmail.de abschalten
+   Vermutlich die Hauptquelle des Spams: Spammer raten Adressen wie
+   info@, kontakt@, datenschutz@ bei jeder Domain durch.
+
+2. Auf dem Handy gegenpruefen
+   Besonders Trainingszeiten (werden unter 680px zu Karten) und die
+   Kopfzeile mit Navigation + Sprachumschalter.
+
+3. Inhalte bestaetigen
+   - Trainingszeiten Mo/Fr/Sa: Die beiden alten Tabellen widersprachen
+     sich. Uebernommen wurde: Mo kein Training, Fr+Sa nach Absprache.
+   - Hallenbezeichnung "Sporthalle Am Schanzl" wurde abgeleitet,
+     nicht bestaetigt.
+
+4. Committen und pushen
+
+
+ERLEDIGT
+--------
+- Impressum und Datenschutz als eigene Seiten, zweisprachig DE/EN
+- Anschrift Johannes Eckl eingetragen
+- E-Mail-Adressen nicht mehr im Quelltext (contact.js)
+- Spamschutz im Formular (Honeypot + Captcha)
+- Galerie liest images/galerie/ aus
+- Altes HTML5-UP-Template entfernt
+- FormSubmit aktiviert, Endpoint eingetragen (Adresse nicht im Quelltext)
